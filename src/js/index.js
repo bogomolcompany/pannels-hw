@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		topPannel = document.querySelector('.header-top'),
 		botPannel = document.querySelector('.header-bot'),
 		filter = document.querySelector('.filters'),
-		closeFilterBtn = document.querySelector('.filters__close'),
 		search = document.querySelector('.header-bot__search'),
 		formWindow = document.querySelector('.form-wrapper'),
 		formRegistration = document.querySelector('.form-reg'),
