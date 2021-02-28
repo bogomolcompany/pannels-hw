@@ -25,21 +25,26 @@ document.addEventListener('DOMContentLoaded', () => {
 			botPannel.clientHeight + filter.clientHeight + 'px'
 	})
 
-	closeFilterBtn.addEventListener('click', () => {
-		filter.classList.remove('visible')
-		botPannel.style.height = ''
-	})
+	document.querySelectorAll('.btn').forEach((button) => {
+		button.addEventListener('click', (e) => {
+			const { id } = e.target
 
-	document.querySelector('#sign').addEventListener('click', () => {
-		formWindow.classList.add('visible')
-	})
-
-	document.querySelector('#to-reg').addEventListener('click', () => {
-		formRegistration.classList.add('active')
-	})
-
-	document.querySelector('#new-user').addEventListener('click', () => {
-		formRegistration.classList.remove('active')
+			switch (id) {
+				case 'sign':
+					formWindow.classList.add('visible')
+					break
+				case 'to-reg':
+					formRegistration.classList.add('active')
+					break
+				case 'new-user':
+					formRegistration.classList.remove('active')
+					break
+				case 'filter-close':
+					filter.classList.remove('visible')
+					botPannel.style.height = ''
+					break
+			}
+		})
 	})
 
 	formWindow.addEventListener('click', (e) => {
