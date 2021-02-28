@@ -38,6 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		formRegistration.classList.add('active')
 	})
 
+	document.querySelector('#new-user').addEventListener('click', () => {
+		formRegistration.classList.remove('active')
+	})
+
 	formWindow.addEventListener('click', (e) => {
 		if (e.target === formWindow) {
 			formWindow.classList.remove('visible')
