@@ -1,0 +1,73 @@
+@import 'null';
+@import 'pages/header';
+@import 'pages/main';
+@import 'pages/forms';
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	-webkit-tap-highlight-color: transparent;
+	outline: none;
+
+	font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+* a {
+	color: black;
+}
+
+.btn {
+	border-radius: 5px;
+}
+
+.btn--white {
+	background-color: #ffffff;
+	color: #5a5858;
+	font-size: 18px;
+	font-weight: bold;
+
+	padding: 10px 25px;
+
+	transition: background-color 0.2s, color 0.2s, text-decoration 0.2s;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&:active {
+		background-color: rgb(0, 0, 0);
+		color: #ffffff;
+	}
+}
+
+.btn--blue {
+	display: block;
+	user-select: none;
+	cursor: pointer;
+	text-align: center;
+
+	background: #2c2f47;
+	border-radius: 18px;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 18px;
+
+	padding: 10px 40px;
+	margin-top: 40px;
+
+	transition: background-color 0.2s;
+
+	&:hover {
+		background: #434768;
+		color: aliceblue;
+	}
+}
+.btn--wide {
+	width: 100%;
+}

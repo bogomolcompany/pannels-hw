@@ -1,0 +1,45 @@
+<div class="form-wrapper">
+	<div class="form-content">
+
+		<!-- form sign in -->
+		<form class="form" id="form-sign" action="/" method="post">
+			<div class="form__about">Sign in</div>
+
+			<label class="form__label" for="sign-name">Login</label>
+			<input class="form__input" name="name" type="text" id="sign-name">
+
+			<label class="form__label" for="sign-pass">Password</label>
+			<input class="form__input" name="company" type="text" id="sign-pass">
+
+			<button type="submit" class="btn btn--blue btn--wide" id="login">Apply</button>
+
+			<a class="btn btn--blue btn--wide" id="to-reg">Create Account</a>
+		</form> <!-- form sign in -->
+
+		<!-- form registration -->
+		<form class="form form-reg" id="form-reg" action="/" method="post">
+			<div class="form__about">registration</div>
+
+			<label class="form__label" for="reg-name">Name</label>
+			<input class="form__input" name="name" type="text" id="reg-name">
+
+			<label class="form__label" for="reg-pass">Login</label>
+			<input class="form__input" name="company" type="text" id="reg-pass">
+
+			<label class="form__label" for="reg-mail">E-mail</label>
+			<input class="form__input" name="email" type="email" id="reg-mail">
+
+			<label class="form__label" for="reg-tel">Phone</label>
+			<input class="form__input" name="tel" type="tel" id="reg-tel">
+
+			<label class="form__label" class="label-check" for="check">
+				<input class="form__checkbox" type="checkbox" name="checkbox" id="check">
+				<span class="fake"></span>
+				<span class="rules">I accept</span>
+				<a class="privacy" href="#">Terms and Privacy Policy</a>
+			</label>
+
+			<button class="btn btn--blue" type="submit">Send</button>
+		</form><!-- form registration -->
+	</div>
+</div>
