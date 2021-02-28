@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="app.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+	<title>Pannels-hw</title>
+
+</head>
+
+<body>
+
+		<div class="header-top">
+		<div class="header-top__name">top pannel</div>
+	</div>
+	<div class="header-bot">
+		<div class="wrapper">
+			<input autocomplete="off" type="text" name="search" value="" class="header-bot__search"
+				placeholder="search input" />
+			<button class="btn btn--white" id="sign">Sign in</button>
+			<div class="header-bot__filters filters">
+				<input class="filters__chexbox" type="checkbox" name="check" id="cx1">
+				<label class="filters__label" for="cx1">filter</label>
+
+				<input class="filters__chexbox" type="checkbox" name="check" id="cx2">
+				<label class="filters__label" for="cx2">filter</label>
+
+				<input class="filters__chexbox" type="checkbox" name="check" id="cx3">
+				<label class="filters__label" for="cx3">filter</label>
+
+				<div class="filters__close">close</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="main">
+	<div class="content">
+		<div class="main__block"></div>
+		<div class="main__block"></div>
+		<div class="main__block"></div>
+		<div class="main__block"></div>
+		<div class="main__block"></div>
+	</div>
+</section>
+	<div class="form-wrapper">
+	<div class="form-content">
+
+		<!-- form sign in -->
+		<form class="form" id="form-sign" action="/" method="post">
+			<div class="form__about">Sign in</div>
+
+			<label class="form__label" for="sign-name">Login</label>
+			<input class="form__input" name="name" type="text" id="sign-name">
+
+			<label class="form__label" for="sign-pass">Password</label>
+			<input class="form__input" name="company" type="text" id="sign-pass">
+
+			<button type="submit" class="btn btn--blue btn--wide" id="login">Apply</button>
+
+			<a class="btn btn--blue btn--wide" id="to-reg">Create Account</a>
+		</form> <!-- form sign in -->
+
+		<!-- form registration -->
+		<form class="form form-reg" id="form-reg" action="/" method="post">
+			<div class="form__about">registration</div>
+
+			<label class="form__label" for="reg-name">Name</label>
+			<input class="form__input" name="name" type="text" id="reg-name">
+
+			<label class="form__label" for="reg-pass">Login</label>
+			<input class="form__input" name="company" type="text" id="reg-pass">
+
+			<label class="form__label" for="reg-mail">E-mail</label>
+			<input class="form__input" name="email" type="email" id="reg-mail">
+
+			<label class="form__label" for="reg-tel">Phone</label>
+			<input class="form__input" name="tel" type="tel" id="reg-tel">
+
+			<label class="form__label" class="label-check" for="check">
+				<input class="form__checkbox" type="checkbox" name="checkbox" id="check">
+				<span class="fake"></span>
+				<span class="rules">I accept</span>
+				<a class="privacy" href="#">Terms and Privacy Policy</a>
+			</label>
+
+			<button class="btn btn--blue" type="submit">Send</button>
+		</form><!-- form registration -->
+	</div>
+</div>
+
+	<script src="app.js"></script>
+</body>
+
+</html>
