@@ -41,13 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
 	formWindow.addEventListener('click', (e) => {
 		if (e.target === formWindow) {
 			formWindow.classList.remove('visible')
+			formRegistration.classList.remove('active')
 		}
 	})
 
-	forms.forEach(form => {
+	forms.forEach((form) => {
 		form.addEventListener('submit', (e) => {
 			e.preventDefault()
 		})
-	});
-
+	})
 })
